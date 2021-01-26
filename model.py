@@ -1,17 +1,20 @@
-#importing data
+# importing data
 from sklearn.datasets import load_boston
+
 data = load_boston()
 
-#training the regression model
+# training the regression model
 from sklearn.model_selection import train_test_split
+
 X_train, X_test, y_train, y_test = train_test_split(data.data, data.target)
 
 from sklearn.linear_model import LinearRegression
+
 clf = LinearRegression()
 clf.fit(X_train, y_train)
 
 
-#evaluating the trained model
+# evaluating the trained model
 from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
@@ -22,15 +25,7 @@ print(f"Mean Squared Error: {mean_squared_error(expected, predicted)}")
 print(f"R2 Score: {r2_score(expected, predicted)}")
 print("RMS: %r " % np.sqrt(np.mean((predicted - expected) ** 2)))
 
-#saving model to file
+# saving model to file
 import pickle
 
 pickle.dump(clf, open("lregression.pkl", "wb"))
-
-# [4.0974e+00, 0.0000e+00, 1.9580e+01, 0.0000e+00, 8.7100e-01, 5.4680e+00, 1.0000e+02, 1.4118e+00, 5.0000e+00, 4.0300e+02, 1.4700e+01, 3.9690e+02, 2.6420e+01]
-
-# [1.7142e-01, 0.0000e+00, 6.9100e+00, 0.0000e+00, 4.4800e-01, 5.6820e+00, 3.3800e+01, 5.1004e+00, 3.0000e+00, 2.3300e+02, 1.7900e+01, 3.9690e+02, 1.0210e+01]
-
-
-
-
