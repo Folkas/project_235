@@ -29,15 +29,25 @@ def preprocessing_function(request_data: str) -> np.array:
     """
     return np.asarray([json.loads(request.data)["inputs"]])
 
+
 @app.route("/predict", methods=["POST"])
 def predict() -> str:
+    """
+    Predicts house price for the input variable (13 house price features). Firstly, the function preprocesses the input parameters for the request data.
+    Then it returns predicted price.
+
+    Parameters:
+
+    Returns:
+    House price (str)
+    """
     input_params = preprocessing_function(request.data)
     try:
         prediction = lmodel.predict(input_params)
     except:
         return json.dumps({"error": "PREDICTION FAILED"}), 400
-    
+
     return json.dumps({"predicted price": int(prediction[0])})
 
 
-app.run(debug=True)
+# app.run(debug=True)
