@@ -1,7 +1,5 @@
 import pickle
-import threading
 import json
-
 from flask import Flask, request
 from werkzeug import serving
 import numpy as np
