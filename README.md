@@ -26,13 +26,13 @@ To use application, send `POST` request to https://folkas-project235.herokuapp.c
 ```
 {"inputs": [4.5900e-02, 5.2500e+01, 5.3200e+00, 0.0000e+00, 4.0500e-01, 6.3150e+00, 4.5600e+01, 7.3172e+00, 6.0000e+00, 2.9300e+02, 1.6600e+01, 3.9690e+02, 7.6000e+00]}
 ```
-Output (expected price: 22.3):
-```{"predicted price": 27}```
+Output (expected price: 22.3):\
+```{"predicted price": 27}```\
 or
 ```
 {"inputs": [1.06590e-01, 8.00000e+01, 1.91000e+00, 0.00000e+00, 4.13000e-01, 5.93600e+00, 1.95000e+01, 1.05857e+01, 4.00000e+00, 3.34000e+02, 2.20000e+01, 3.76040e+02, 5.57000e+00]}
 ```
-Output (expected price: 20.6):
-```{"predicted price": 17}```
+Output (expected price: 20.6):\
+```{"predicted price": 17}```\
 ## Other
 * I can't wait to get over this module
