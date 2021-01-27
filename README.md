@@ -10,7 +10,7 @@
 
 
 ## General info:
-This repository contains Flask application for Turing College module 2 spring 3 final assignment. The application predicts house price based on 13 inputs from Boston house price dataset.
+This repository contains Flask application for Turing College module 2 spring 3 final assignment. The application predicts house price based on 13 features from Boston house price dataset.
 
 ## Setup
 To run this project, install it using `pip` command:
