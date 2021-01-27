@@ -28,7 +28,9 @@ To use application, send `POST` request to https://folkas-project235.herokuapp.c
 ```
 Output (expected price: 22.3):\
 ```{"predicted price": 27}```\
+
 or
+
 ```
 {"inputs": [1.06590e-01, 8.00000e+01, 1.91000e+00, 0.00000e+00, 4.13000e-01, 5.93600e+00, 1.95000e+01, 1.05857e+01, 4.00000e+00, 3.34000e+02, 2.20000e+01, 3.76040e+02, 5.57000e+00]}
 ```
